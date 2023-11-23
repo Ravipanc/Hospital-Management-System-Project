@@ -8,17 +8,9 @@ import java.util.Scanner;
 
 public class Doctor {
     private Connection connection;
-
-
     public Doctor(Connection connection){
         this.connection=connection;
-
-
-
-
     }
-
-
     public  void viewDoctors(){
         String query="select * from doctors";
         try{
@@ -38,8 +30,6 @@ public class Doctor {
                 System.out.println("+-------------+--------------+----------------+");
 
             }
-
-
         }catch (SQLException e){
             e.printStackTrace();
         }
